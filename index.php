@@ -1,29 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuneshare</title>
-</head>
-<body>
-    <header>
-        <h1> Tuneshare - Share Your Favourite Tunes & Join The Community </h1> 
-    </header>
+<?php require('header.php'); ?>
     <main>
         <form action="process.php" method="post">
-            <input type="text" name="fname" placeholder="First Name">
-            <input type="text" name="lname" placeholder="Last Name">
-            <input type="text" name="genre" placeholder="Genre">
-            <input type="text" name="location" placeholder="Location">
-            <input type="number" name="age" placeholder="Age">
-            <input type="email" name="email" placeholder="Email">
-            <input type="text" name="favsong" placeholder="What Are You Listening To?">
-            <input type="submit" value="submit" name="submit">
+            <div class="form-group">
+                <input type="text" name="fname" placeholder="First Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="lname" placeholder="Last Name" class="form-control">
+            </div> 
+            <div class="form-group">
+                <input type="text" name="genre" placeholder="Genre" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="location" placeholder="Location" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="age" placeholder="Age" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="favsong" placeholder="What Are You Listening To?" class="form-control">
+            </div>
+            <input type="submit" value="submit" name="submit" class="btn btn-primary">
         </form>
     </main>
-    <footer>
-        <p>&copy; TuneShare <?php echo getdate()['year']; ?> </p>
-    </footer>
-</body>
-</html>
+<?php require('footer.php'); ?>

@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuneshare</title>
-</head>
-<body>
-    <header>
-        <h1> Tuneshare - Share Your Favourite Tunes & Join The Community </h1> 
-    </header>
     <?php
+     require('header.php'); 
 
     //create variables to store form data 
 
@@ -65,8 +54,5 @@
 
     ?>
     <a href="view.php"> View All Tunes </a>
-    <footer>
-        <p>&copy; TuneShare <?php echo getdate()['year']; ?> </p>
-    </footer>
-</body>
-</html>
+    <?php require('footer.php'); ?>
+   
