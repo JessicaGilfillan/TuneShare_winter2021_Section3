@@ -1,8 +1,8 @@
 <?php
 try {
-    $dsn = 'mysql:host=172.31.22.43;dbname=Jessica100'; 
-    $username = 'Jessica100'; 
-    $password = 'W54pmddcpU'; //mamp users 
+    $dsn = 'mysql:host=localhost;dbname=database'; 
+    $username = 'root'; 
+    $password = 'root'; //mamp users 
     //$password = ''; wamp users  
 
     $db = new PDO($dsn, $username, $password); 
